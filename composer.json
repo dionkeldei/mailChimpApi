@@ -1,0 +1,18 @@
+{
+    "name": "dionkeldei/mailchimpapi",
+    "description": "Mail chimp Api for Laravel",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Dionkeldei",
+            "email": "dionkeldei@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "mailChimpApi\\": "src/"
+        }
+    }
+}
