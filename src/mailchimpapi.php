@@ -3,8 +3,13 @@ namespace dionkeldei\mailChimpApi;
 
 class mailChimpApi{
 
+	function __construct(){
+    $this->list_id = <list-id>;
+}
+
+
 function insert($mail,$name,$lastname){
-	   $url = 'https://<your-data-center>.api.mailchimp.com/3.0/lists/<list-id>/members/';
+	   $url = 'https://<your-data-center>.api.mailchimp.com/3.0/lists/'.$this->list_id.'/members/';
        $username = 'qwerty';
        $password = '<your-api-key>';
        $jsonPost = [
