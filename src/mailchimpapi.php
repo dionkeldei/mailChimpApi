@@ -62,7 +62,7 @@ function insert($mail,$name,$lastname){
 
 
 function exist($mail){
-       $url = 'https://<your-data-center>.api.mailchimp.com/3.0/lists/<list-id>/members/'.md5($mail);
+       $url = 'https://us1.api.mailchimp.com/3.0/lists/'.$this->list_id.'/members/'.md5($mail);
        $username = 'qwerty';
        $password = '<your-api-key>';
        $jsonPost = '{}';
